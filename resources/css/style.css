@@ -71,7 +71,7 @@ thead {
 }
 
 td {
-    text-align: left;
+    text-align: center;
     border: 1px solid black; /*This changes the colour of text within each cell and thickness of the table cell borders*/
 }
 
