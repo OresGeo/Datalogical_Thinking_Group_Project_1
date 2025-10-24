@@ -1,13 +1,17 @@
 /* I used a single .css file for the styling of all 4 pages for two reasons: A) It is considered good practice in web development when developers maintain a consistent style among different sub-pages of their website. It also helps users understand the structure of each page better. B) Since our website is quite small (only 4 pages), creating 4 separate .css pages might create more issues than it might solve (confusion regarding what .css element affects which part of a webpage, incosistencies due to not changing all relevant .css items in each website if we decide to make specific changes etc.) */
 
 /* In CSS, we choose each HTML element we want to modify separately, and then add the changes we want to do within the curly brackets. Here, for example, we have the H1 (main heading) element, and we can change its font, font size, decide if we want it to be bold or not, its colour, as well as its alignment within the page. The values I added are examples, feel free to change them as you see fit (you can simply Google all available font-families, colours, etc. and change the value according to your taste). The only thing I would unchanged, especially for the main heading, would be the center-page alignment. */
+body{
+    margin: 0;
+    padding: 0;
+}
+
 h1 {
     font-family: Helvetica; /*This part changes the font, color etc. of the main heading (the one that says "The Project Dataset", for example) of each webpage */
     font-size: 100px;
     font-weight: bold;
     color: khaki;
     text-align: center;
-    background-image: url(""); /* We can a link to a background image for our main heading if we want. Just paste the link between the 2 brackets. */
 }
 
 h2 {
@@ -28,6 +32,28 @@ li {
     font-family: Helvetica; /*This changes aspects of the bullet points within an unordered list (our names in the low part of the webpage for example)*/
     font-size: 20px;
     color: black;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: lightslategrey;
+}
+nav ul li {
+    float: left;
+}
+nav ul li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    background-color: khaki; /*This changes the colour of navigation when hovering over*/
 }
 
 table {
@@ -53,10 +79,13 @@ header {
     border-bottom: 3px solid black; /*This adds a bottom border to the header section of each webpage*/
     padding: 15px;
     background-color: lightslategray; /*This changes the background colour of the header section of each webpage*/
+    background-image: url("https://artlogic-res.cloudinary.com/w_1680,h_1680,c_limit,f_webp,fl_lossy,q_auto:good/artlogicstorage/stephenfriedman/images/view/93a612b4917ffb8ec70fbe8bef310be5j/stephenfriedmangallery-mamma-andersson-cuckoo-hill-2019.jpg"); /* We can a link to a background image for our main heading if we want. Just paste the link between the 2 brackets. */
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 footer {
     border-top: 3px solid black; /*This adds a top border to the footer section of each webpage*/
     padding: 15px;
-    background-color: lightslategray; /*This changes the background colour of the footer section of each webpage*/
+    background-color: lightslategray; /*This chanonges the background colour of the footer section of each webpage*/
 }
