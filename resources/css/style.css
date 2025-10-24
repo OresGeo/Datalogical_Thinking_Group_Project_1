@@ -2,7 +2,7 @@
 
 /* In CSS, we choose each HTML element we want to modify separately, and then add the changes we want to do within the curly brackets. Here, for example, we have the H1 (main heading) element, and we can change its font, font size, decide if we want it to be bold or not, its colour, as well as its alignment within the page. The values I added are examples, feel free to change them as you see fit (you can simply Google all available font-families, colours, etc. and change the value according to your taste). The only thing I would unchanged, especially for the main heading, would be the center-page alignment. */
 h1 {
-    font-family: Helvetica;
+    font-family: Helvetica; /*This part changes the font, color etc. of the main heading (the one that says "The Project Dataset", for example) of each webpage */
     font-size: 100px;
     font-weight: bold;
     color: khaki;
@@ -11,7 +11,7 @@ h1 {
 }
 
 h2 {
-    font-family: Helvetica;
+    font-family: Helvetica; /*Similar to the above, this changes the font, color etc. of the sub-headings (the ones that say "Dataset Description", for example) of each webpage */
     font-size: 50px;
     font-weight: bold;
     color: darkslategray;
@@ -19,13 +19,13 @@ h2 {
 }
 
 p {
-    font-family: Helvetica;
+    font-family: Helvetica; /*This changes aspects of the paragraph text within each webpage*/
     font-size: 20px;
     color: black;
 }
 
-li {
-    font-family: Helvetica;
+li { 
+    font-family: Helvetica; /*This changes aspects of the bullet points within an unordered list (our names in the low part of the webpage for example)*/
     font-size: 20px;
     color: black;
 }
@@ -33,18 +33,30 @@ li {
 table {
     margin-left: auto;
     margin-right: auto;
-    border: 2px solid black;
+    border: 2px solid black; /*This changes the colour and thickness of the table border*/
 }
 
 .table_heading {
-    color:blueviolet;
+    color:blueviolet; /*This changes the colour of the table heading (column names) text*/
+}
+
+thead {
+    background-color: palevioletred; /*This changes the background colour of the table heading (column names)*/
 }
 
 td {
     text-align: left;
-    border: 1px solid black;
+    border: 1px solid black; /*This changes the colour of text within each cell and thickness of the table cell borders*/
 }
 
-thead {
-    background-color: palevioletred;
+header {
+    border-bottom: 3px solid black; /*This adds a bottom border to the header section of each webpage*/
+    padding: 15px;
+    background-color: lightslategray; /*This changes the background colour of the header section of each webpage*/
+}
+
+footer {
+    border-top: 3px solid black; /*This adds a top border to the footer section of each webpage*/
+    padding: 15px;
+    background-color: lightslategray; /*This changes the background colour of the footer section of each webpage*/
 }
