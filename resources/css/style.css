@@ -26,6 +26,7 @@ p {
     font-family: Helvetica; /*This changes aspects of the paragraph text within each webpage*/
     font-size: 20px;
     color: black;
+    text-align: center;
 }
 
 li { 
@@ -71,7 +72,7 @@ thead {
 }
 
 td {
-    text-align: center;
+    text-align: left;
     border: 1px solid black; /*This changes the colour of text within each cell and thickness of the table cell borders*/
 }
 
