@@ -91,7 +91,7 @@ footer {
     border-top: 3px solid black; /*This adds a top border to the footer section of each webpage*/
     padding: 15px;
     background-color: lightslategray; /*This chanonges the background colour of the footer section of each webpage*/
-    background-image: url("https://commons.wikimedia.org/wiki/File:Villa_Snellman_Aslund_1917.jpg#/media/File:Villa_Snellman_Aslund_1917.jpg");
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/5a/Villa_Snellman_Aslund_1917.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
