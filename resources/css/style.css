@@ -58,8 +58,10 @@ nav ul li a {
 nav ul li a:hover {
     background-color: khaki; /*This changes the colour of navigation when hovering over*/
 }
-nav ul li a.active { color: khaki; 
-                }
+  nav ul li a.current-menu-item,
+    nav a.current_page_item {
+        background-color: khaki; /*Keeps the background hover colour for the active page*/
+    }
 
 table {
     margin-left: auto;
