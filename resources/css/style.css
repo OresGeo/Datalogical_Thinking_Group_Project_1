@@ -37,28 +37,52 @@ li {
     color: black;
 }
 
-nav ul {
-    display: inline-block;
+.nav ul {
+    display: flex;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: lightslategrey;
 }
-nav ul li {
+.nav ul li {
     float: left;
 }
-nav ul li a {
+.nav ul li a {
     display: block;
     color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
-nav ul li a:hover {
+.nav ul li a:hover {
     background-color: khaki; /*This changes the colour of navigation when hovering over*/
 }
 
+/* Column container */
+.container {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .container, .nav {   
+    flex-direction: column;
+  }
 table {
     margin-left: auto;
     margin-right: auto;
