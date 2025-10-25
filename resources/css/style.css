@@ -26,7 +26,7 @@ p {
     font-family: Helvetica; /*This changes aspects of the paragraph text within each webpage*/
     font-size: 20px;
     color: black;
-    text-align: center;
+    text-align: left;
 }
 
 li { 
@@ -89,4 +89,8 @@ footer {
     border-top: 3px solid black; /*This adds a top border to the footer section of each webpage*/
     padding: 15px;
     background-color: lightslategray; /*This chanonges the background colour of the footer section of each webpage*/
+    p {
+  background-image: url('Images/Villa_Snellman_Aslund_1917.jpg')
+       background-size: cover;
+         background-repeat: no-repeat;
 }
