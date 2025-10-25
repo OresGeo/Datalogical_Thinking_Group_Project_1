@@ -79,7 +79,7 @@ td {
 }
 
 header {
-    border-bottom: 3px solid black; /*This adds a bottom border to the header section of each webpage*/
+    border-bottom: 0px solid black; /*This adds a bottom border to the header section of each webpage*/
     padding: 15px;
     background-color: lightslategray; /*This changes the background colour of the header section of each webpage*/
     background-image: url("https://artlogic-res.cloudinary.com/w_1680,h_1680,c_limit,f_webp,fl_lossy,q_auto:good/artlogicstorage/stephenfriedman/images/view/93a612b4917ffb8ec70fbe8bef310be5j/stephenfriedmangallery-mamma-andersson-cuckoo-hill-2019.jpg"); /* We can a link to a background image for our main heading if we want. Just paste the link between the 2 brackets. */
@@ -88,7 +88,7 @@ header {
 }
 
 footer {
-    border-top: 3px solid black; /*This adds a top border to the footer section of each webpage*/
+    border-top: 0px solid black; /*This adds a top border to the footer section of each webpage*/
     padding: 15px;
     background-color: lightslategray; /*This chanonges the background colour of the footer section of each webpage*/
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/5a/Villa_Snellman_Aslund_1917.jpg");
