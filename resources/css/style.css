@@ -23,11 +23,12 @@ h2 {
 }
 
 p {
-    padding: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
     font-family: Helvetica; /*This changes aspects of the paragraph text within each webpage*/
     font-size: 20px;
     color: black;
-    text-align: left;
+    text-align: justify;
 }
 
 li { 
