@@ -2,8 +2,8 @@
 
 /* In CSS, we choose each HTML element we want to modify separately, and then add the changes we want to do within the curly brackets. Here, for example, we have the H1 (main heading) element, and we can change its font, font size, decide if we want it to be bold or not, its colour, as well as its alignment within the page. The values I added are examples, feel free to change them as you see fit (you can simply Google all available font-families, colours, etc. and change the value according to your taste). The only thing I would unchanged, especially for the main heading, would be the center-page alignment. */
 body{
-    margin: 0;
-    padding: 0;
+    margin: 25 px;
+    padding: 25 px;
 }
 
 h1 {
