@@ -58,7 +58,7 @@ nav ul li a {
 nav ul li a:hover {
     background-color: khaki; /*This changes the colour of navigation when hovering over*/
 }
-  nav ul li.active { color: khaki; /*Keeps the background hover colour for the active page*/
+  nav ul li a.active { color: khaki; /*Keeps the background hover colour for the active page*/
     }
 
 table {
