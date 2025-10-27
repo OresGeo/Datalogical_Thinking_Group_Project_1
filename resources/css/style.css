@@ -50,10 +50,17 @@ h3 {
     text-align: center;
 }
 h4 {
-    font-family: Helvetica; /*Similar to the above, is sub-header intended for the footer */
+    font-family: Helvetica; /*Similar to the above, is sub-header intended for the footer*/
     font-size: 12px;
     font-weight: bold;
     color: white;
+    text-align: left;
+}
+h5 {
+    font-family: Helvetica; /*Similar to the above, is sub-header intended for image descriptions*/
+    font-size: 10px;
+    font-weight: bold;
+    color: darkslategray;
     text-align: left;
 }
 
