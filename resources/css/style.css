@@ -51,7 +51,7 @@ h3 {
 }
 h4 {
     font-family: Helvetica; /*Similar to the above, is sub-header intended for the footer */
-    font-size: 8px;
+    font-size: 12px;
     font-weight: bold;
     color: white;
     text-align: left;
@@ -128,7 +128,4 @@ footer {
     border-top: 0px solid black; /*This adds a top border to the footer section of each webpage*/
     padding: 15px;
     background-color: lightslategray; /*This changes the background colour of the footer section of each webpage*/
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/1/10/Reflexer_by_Anders_Zorn_01.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
 }
