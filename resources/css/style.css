@@ -13,7 +13,6 @@ body{
 .column {
   float: left;
   padding: 10px;
-  height: 300px; 
 }
 
 .left {
@@ -87,7 +86,7 @@ nav ul li a:hover {
     }
 
 table {
-  table-layout: fixed; length: 100%;
+  table-layout: fixed; width: 100%;
     margin-left: auto;
     margin-right: auto;
     border: 2px solid black; /*This changes the colour and thickness of the table border*/
