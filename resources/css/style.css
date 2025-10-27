@@ -42,6 +42,13 @@ h2 {
     color: darkslategray;
     text-align: center;
 }
+h3 {
+    font-family: Helvetica; /*Similar to the above, this changes the font, color etc. of the sub-headings) of each webpage */
+    font-size: 30px;
+    font-weight: bold;
+    color: darkslategray;
+    text-align: center;
+}
 
 p {
     padding-left: 50px;
@@ -114,7 +121,7 @@ footer {
     border-top: 0px solid black; /*This adds a top border to the footer section of each webpage*/
     padding: 15px;
     background-color: lightslategray; /*This changes the background colour of the footer section of each webpage*/
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/40/Josef_Frank_Sommerliche_Dorfstra%C3%9Fe.jpg");
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/1/10/Reflexer_by_Anders_Zorn_01.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
