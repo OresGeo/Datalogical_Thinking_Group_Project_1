@@ -8,10 +8,8 @@ body{
 * {
   box-sizing: border-box;
 }
-
-/* Create two unequal columns that floats next to each other */
 .column {
-  float: left;
+  float: left; /* This creates two unequal columns that floats next to each other */
   padding: 10px;
 }
 
@@ -23,9 +21,8 @@ body{
   width: 70%;
 }
 
-/* Clear floats after the columns */
 .row:after {
-  content: "";
+  content: ""; /* This clears floats after the columns */
   display: table;
   clear: both;
 }
@@ -86,7 +83,6 @@ nav ul li a:hover {
     }
 
 table {
-  table-layout: fixed; width: 100%;
     margin-left: auto;
     margin-right: auto;
     border: 2px solid black; /*This changes the colour and thickness of the table border*/
