@@ -1,0 +1,53 @@
+ALGORITHM: Analyze Gender Distribution of Swedish Artists from the MoMA Dataset
+
+SET input_file = "swedish_artists.csv"
+SET output_file = "gender_summary_swedish_artists.csv"
+
+INITIALIZE female_count = 0
+INITIALIZE male_count = 0
+INITIALIZE unknown_count = 0
+
+OPEN input_file
+READ all rows from the file
+
+FOR each row IN file DO
+    SET gender = value of column "Gender"
+    IF gender = "Female" THEN
+        female_count = female_count + 1
+    ELSE IF gender = "Male" THEN
+        male_count = male_count + 1
+    ELSE IF gender = "Unknown" THEN
+        unknown_count = unknown_count + 1
+    END IF
+
+SET total = female_count + male_count + unknown_count
+SET female_percent = (female_count / total) * 100
+SET male_percent = (male_count / total) * 100
+SET unknown_percent = (unknown_count / total) * 100
+
+CREATE a new data structure called summary_table
+ADD ("Female", female_count, female_percent) TO summary_table
+ADD ("Male", male_count, male_percent) TO summary_table
+ADD ("Unknown", unknown_count, unknown_percent) TO summary_table
+
+
+OPEN output_file FOR writing
+WRITE headers "Gender, Count, Percent"
+
+FOR each record IN summary_table DO
+    WRITE record TO output_file
+END FOR
+
+IF female_count > male_count AND female_count > unknown_count THEN
+ PRINT "There are more Swedish female artists in the MoMA collection than Swedish male or unknown artists."
+ELSE IF male_count > female_count AND male_count > unknown_count THEN
+ PRINT "There are more Swedish male artists in the MoMA collection than Swedish female or unknown artists."
+ELSE IF unknown_count > female_count AND unknown_count > male_count THEN
+ PRINT "There are more Swedish artists with unknown gender in the MoMA collection than female or male artists."
+ELSE IF female_count = male_count AND female_count > unknown_count THEN
+ PRINT "There is an equal number of Swedish male and female artists in the MoMA collection, more than unknown artists."
+ELSE
+ PRINT "The gender distribution among Swedish artists in the MoMA collection is evenly balanced."
+END IF
+
+END ALGORITHM
