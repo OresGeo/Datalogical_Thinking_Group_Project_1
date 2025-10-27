@@ -114,7 +114,7 @@ footer {
     border-top: 0px solid black; /*This adds a top border to the footer section of each webpage*/
     padding: 15px;
     background-color: lightslategray; /*This changes the background colour of the footer section of each webpage*/
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/8/82/Skeppet_etikett_G%C3%B6teborg.jpg");
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/40/Josef_Frank_Sommerliche_Dorfstra%C3%9Fe.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
