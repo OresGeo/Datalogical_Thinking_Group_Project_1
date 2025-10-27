@@ -43,11 +43,18 @@ h2 {
     text-align: center;
 }
 h3 {
-    font-family: Helvetica; /*Similar to the above, this changes the font, color etc. of the sub-headings) of each webpage */
+    font-family: Helvetica; /*Similar to the above, this changes the font, color etc. of the sub-headings of each webpage */
     font-size: 30px;
     font-weight: bold;
     color: darkslategray;
     text-align: center;
+}
+h4 {
+    font-family: Helvetica; /*Similar to the above, is sub-header intended for the footer */
+    font-size: 8px;
+    font-weight: bold;
+    color: white;
+    text-align: left;
 }
 
 p {
