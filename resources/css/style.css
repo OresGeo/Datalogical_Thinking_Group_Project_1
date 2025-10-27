@@ -5,6 +5,31 @@ body{
     margin: 0;
     padding: 0;
 }
+* {
+  box-sizing: border-box;
+}
+
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px; 
+}
+
+.left {
+  width: 30%;
+}
+
+.right {
+  width: 70%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 h1 {
     font-family: Helvetica; /*This part changes the font, color etc. of the main heading (the one that says "The Project Dataset", for example) of each webpage */
