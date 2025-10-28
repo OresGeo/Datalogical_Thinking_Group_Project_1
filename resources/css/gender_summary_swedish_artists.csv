@@ -1,4 +1,5 @@
-﻿Gender;Count;Percent
-Male;76;58%
-Female;23;18%
-Unknown;32;24%
+﻿Gender;Count;Percent
+Male;76;0,58
+Female;23;0,18
+Unknown;32;0,24
+;;
