@@ -118,7 +118,7 @@ ConstituentID;Name;ArtistBio;Nationality;Gender;Born;Died
 41191;Jens S Jensen;Swedish, 1946–2015;Swedish;male;1946;2015
 42454;Nathalie Djurberg;Swedish, born 1978;Swedish;female;1978;0
 42749;Annee Olofsson;Swedish, born 1966;Swedish;female;1966;0
-43688;"Markus Notch Persson";Swedish, born 1979;Swedish;male;1979;0
+43688;Markus 'Notch' Persson;Swedish, born 1979;Swedish;male;1979;0
 48037;Frederik Ljungström;Swedish, 1875–1964;Swedish;male;1875;1964
 48422;Sven-Åke Johansson;Swedish, born 1943;Swedish;;1943;0
 48852;A B Norna Hemslojd;;Swedish;;0;0
@@ -130,6 +130,7 @@ ConstituentID;Name;ArtistBio;Nationality;Gender;Born;Died
 131905;Arne Arnbom;Swedish, 1922–1975;Swedish;male;1922;1975
 137031;Lou Laurin Lam;Swede, 1934–2012;Swedish;female;1934;2012
 138111;Ulla Wiggen;Swedish, born 1942;Swedish;female;1942;0
+
 
 
 
