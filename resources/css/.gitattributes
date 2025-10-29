@@ -39,11 +39,11 @@ FOR each record IN summary_table DO
 END FOR
 
 IF female_count > male_count AND female_count > unknown_count THEN
- PRINT "There are more Swedish female artists in the MoMA collection than Swedish male or unknown artists."
+ PRINT "There are more Swedish female artists in the MoMA collection than Swedish male artists or Swedish artists with unknown gender."
 ELSE IF male_count > female_count AND male_count > unknown_count THEN
- PRINT "There are more Swedish male artists in the MoMA collection than Swedish female or unknown artists."
+ PRINT "There are more Swedish male artists in the MoMA collection than Swedish female artists or Swedish artists with unknown gender."
 ELSE IF unknown_count > female_count AND unknown_count > male_count THEN
- PRINT "There are more Swedish artists with unknown gender in the MoMA collection than female or male artists."
+ PRINT "There are more Swedish artists with unknown gender in the MoMA collection than Swedish female or male artists."
 ELSE IF female_count = male_count AND female_count > unknown_count THEN
  PRINT "There is an equal number of Swedish male and female artists in the MoMA collection, more than unknown artists."
 ELSE
