@@ -143,7 +143,7 @@ header {
     border-bottom: 0px solid black; /*This adds a bottom border to the header section of each webpage*/
     padding: 15px;
     background-color: lightslategray; /*This changes the background colour of the header section of each webpage*/
-    background-image: url("https://artlogic-res.cloudinary.com/w_1680,h_1680,c_limit,f_webp,fl_lossy,q_auto:good/artlogicstorage/stephenfriedman/images/view/93a612b4917ffb8ec70fbe8bef310be5j/stephenfriedmangallery-mamma-andersson-cuckoo-hill-2019.jpg"); /* We can a link to a background image for our main heading if we want. Just paste the link between the 2 brackets. */
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/9/94/Eftersommar_Hilma_af_Klint_1903.jpeg"); /* We can a link to a background image for our main heading if we want. Just paste the link between the 2 brackets. */
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -152,4 +152,11 @@ footer {
     border-top: 0px solid black; /*This adds a top border to the footer section of each webpage*/
     padding: 15px;
     background-color: lightslategray; /*This changes the background colour of the footer section of each webpage*/
+}
+footer p {
+     font-family: Helvetica; /*Similar to the above, is sub-header intended for the footer*/
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    padding: 0;
 }
