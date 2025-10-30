@@ -4,40 +4,39 @@
         <title>The Project Algorithm</title>
         <link href="./resources/css/style.css" rel="stylesheet" type="text/css" />
     </head>
-     <body>
-    <header>
-        <h1>MoMA Dataset Project</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="dataset.html">Dataset</a></li>
-                <li><a href="algorithm.html" class="active">Algorithm</a></li>
-                <li><a href="people.html">People</a></li>
-            </ul>
-        </nav>
-    </header>
+    <body>
+        <header>
+            <h1>MoMA Dataset Project</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="dataset.html">Dataset</a></li>
+                    <li><a href="algorithm.html" class="active">Algorithm</a></li>
+                    <li><a href="people.html">People</a></li>
+                </ul>
+            </nav>
+        </header>
         <main>
             <div class="row">
-  <div class="column left">
-       <img src="resources/css/Images/algorithm1.png" alt="Count process" width="350" height="388" style="display:block; margin:auto;">
-      <h5>Visualisation of the the main steps of the count process. </h5>
-      <img src="resources/css/Images/algorithm2.png" alt="Summary process" width="350" height="388" style="display:block; margin:auto;">
-      <h5>Visualisation of the the main steps of the summary process. </h5>
-       </div>
-              <div class="column right">
-        <h2>The Project Algorithm</h2>
-        <p>We began the work with our algorithm by discussing what we wanted it to actually achieve, and decided that the goal was to analyze the gender distribution among Swedish artists in the Museum of Modern Art collection (MoMA). We designed the algorithm to count how many of the artists in the dataset are categorized as female, male or unknown. We also designed it to calculate the percentage of each gender category. The result were written into a new CSV file with the summarized data. 
-
-<p>After defining our goal and purpose, we explored the dataset to better understand the structure of it and which columns had information that could be useful. We quickly identified gender as a key attribute and that the algorithm should read each row of that column and check its value. From there, we made it follow the main steps which were to count males and females, calculate the total with a count but also percentage, and then save the summary in a new file. This process of work was also iterative. After designing the initial algorithm, we decided to include the rows with the unknown genders as well to highlight the voids in the dataset. Consequently, we expanded the original dataset to include the "unknown" gender category, representing artists whose gender was not specified, and then expanded the algorithm to account for this additional variable accordingly.
- As a final step, the algorithm was told to print a short summary statement comparing the different count results in each category.</p>
-<p>This way of designing the algorithm was chosen because it clearly demonstrates how data can be processed and summarized as an algorithm using basic operations like variables, iterations and selections. We wrote the algorithm in pseudocode to make it easier to understand with or without programming knowledge. <a href="https://github.com/OresGeo/Datalogical_Thinking_Group_Project_1/blob/main/resources/css/.gitattributes"target="_blank">Here</a> you can find the pseudo code for the algorithm and <a href="https://github.com/OresGeo/Datalogical_Thinking_Group_Project_1/blob/main/resources/css/gender_summary_swedish_artists.csv"target="_blank">here</a> you can find the summary of the gender count.</a></p>
-<p>To make the coding more understandable when writing it, we created a visualized model that illustrate the main steps of the count and summary process, which you can see to the left. The Variables are illustrated as boxes, and the arrows as assignments.
-        </p>
-</div>
-</div>
-    </main>
-    <footer>
-     <h4>Created for educational purposes as an assignment for the course "Datalogical Thinking" (Master's Programme in Information Science: Digital Environments, University of Borås) by the students: Dana Neumannová, Isabelle Brandt, Julia Milder and Orestis Georgalas.</h4>
-    <p>Header image credit: Eftersommar by Hilma af Klint, Public domain, via <a href="https://bcl.wikipedia.org/wiki/Ladawan:Eftersommar_Hilma_af_Klint_1903.jpeg" class="href" target="_blank">Wikimedia Commons.</a></p> </footer>
+                <div class="column left">
+                    <img src="resources/css/Images/algorithm1.png" alt="Count process" width="350" height="388" style="display:block; margin:auto;">
+                    <h5>Visualisation of the the main steps of the count process. </h5>
+                    <img src="resources/css/Images/algorithm2.png" alt="Summary process" width="350" height="388" style="display:block; margin:auto;">
+                    <h5>Visualisation of the the main steps of the summary process. </h5>
+                </div>
+                <div class="column right">
+                    <h2>The Project Algorithm</h2>
+                    <p>We began the work with our algorithm by discussing what we wanted it to actually achieve, and decided that the goal was to analyze the gender distribution among Swedish artists in the Museum of Modern Art collection (MoMA). We designed the algorithm to count how many of the artists in the dataset are categorized as female, male or unknown. We also designed it to calculate the percentage of each gender category. The result were written into a new CSV file with the summarized data. 
+                    <p>After defining our goal and purpose, we explored the dataset to better understand the structure of it and which columns had information that could be useful. We quickly identified gender as a key attribute and that the algorithm should read each row of that column and check its value. From there, we made it follow the main steps which were to count males and females, calculate the total with a count but also percentage, and then save the summary in a new file. This process of work was also iterative. After designing the initial algorithm, we decided to include the rows with the unknown genders as well to highlight the voids in the dataset. Consequently, we expanded the original dataset to include the "unknown" gender category, representing artists whose gender was not specified, and then expanded the algorithm to account for this additional variable accordingly.
+                    As a final step, the algorithm was told to print a short summary statement comparing the different count results in each category.</p>
+                    <p>This way of designing the algorithm was chosen because it clearly demonstrates how data can be processed and summarized as an algorithm using basic operations like variables, iterations and selections. We wrote the algorithm in pseudocode to make it easier to understand with or without programming knowledge. <a href="https://github.com/OresGeo/Datalogical_Thinking_Group_Project_1/blob/main/resources/css/.gitattributes"target="_blank">Here</a> you can find the pseudo code for the algorithm and <a href="https://github.com/OresGeo/Datalogical_Thinking_Group_Project_1/blob/main/resources/css/gender_summary_swedish_artists.csv"target="_blank">here</a> you can find the summary of the gender count.</a></p>
+                    <p>To make the coding more understandable when writing it, we created a visualized model that illustrate the main steps of the count and summary process, which you can see to the left. The Variables are illustrated as boxes, and the arrows as assignments.</p>
+                </div>
+            </div>
+        </main>
+        <footer>
+        <h4>Created for educational purposes as an assignment for the course "Datalogical Thinking" (Master's Programme in Information Science: Digital Environments, University of Borås) by the students: Dana Neumannová, Isabelle Brandt, Julia Milder and Orestis Georgalas.</h4>
+        <p>Header image credit: Eftersommar by Hilma af Klint, Public domain, via <a href="https://bcl.wikipedia.org/wiki/Ladawan:Eftersommar_Hilma_af_Klint_1903.jpeg" class="href" target="_blank">Wikimedia Commons.</a></p>
+        </footer>
     </body>
 </html>
