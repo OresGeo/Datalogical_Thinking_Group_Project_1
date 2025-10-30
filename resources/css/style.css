@@ -1,6 +1,3 @@
-/* I used a single .css file for the styling of all 4 pages for two reasons: A) It is considered good practice in web development when developers maintain a consistent style among different sub-pages of their website. It also helps users understand the structure of each page better. B) Since our website is quite small (only 4 pages), creating 4 separate .css pages might create more issues than it might solve (confusion regarding what .css element affects which part of a webpage, incosistencies due to not changing all relevant .css items in each website if we decide to make specific changes etc.) */
-
-/* In CSS, we choose each HTML element we want to modify separately, and then add the changes we want to do within the curly brackets. Here, for example, we have the H1 (main heading) element, and we can change its font, font size, decide if we want it to be bold or not, its colour, as well as its alignment within the page. The values I added are examples, feel free to change them as you see fit (you can simply Google all available font-families, colours, etc. and change the value according to your taste). The only thing I would unchanged, especially for the main heading, would be the center-page alignment. */
 body {
     margin: 0;
     padding: 0;
@@ -18,7 +15,7 @@ main {
 }
 
 .column {
-  float: left; /* This creates two unequal columns that floats next to each other */
+  float: left;
   padding: 10px;
 }
 
@@ -31,13 +28,13 @@ main {
 }
 
 .row:after {
-  content: ""; /* This clears floats after the columns */
+  content: "";
   display: table;
   clear: both;
 }
 
 h1 {
-    font-family: Helvetica; /*This part changes the font, color etc. of the main heading (the one that says "The Project Dataset", for example) of each webpage */
+    font-family: Helvetica;
     font-size: 100px;
     font-weight: bold;
     color: khaki;
@@ -45,7 +42,7 @@ h1 {
 }
 
 h2 {
-    font-family: Helvetica; /*Similar to the above, this changes the font, color etc. of the sub-headings (the ones that say "Dataset Description", for example) of each webpage */
+    font-family: Helvetica;
     font-size: 50px;
     font-weight: bold;
     color: darkslategray;
@@ -53,7 +50,7 @@ h2 {
 }
 
 h3 {
-    font-family: Helvetica; /*Similar to the above, this changes the font, color etc. of the sub-headings of each webpage */
+    font-family: Helvetica;
     font-size: 30px;
     font-weight: bold;
     color: darkslategray;
@@ -61,7 +58,7 @@ h3 {
 }
 
 h4 {
-    font-family: Helvetica; /*Similar to the above, is sub-header intended for the footer*/
+    font-family: Helvetica;
     font-size: 12px;
     font-weight: bold;
     color: white;
@@ -69,24 +66,24 @@ h4 {
 }
 
 h5 {
-    font-family: Helvetica; /*Similar to the above, is sub-header intended for image descriptions*/
+    font-family: Helvetica;
     font-size: 10px;
     font-weight: bold;
     color: darkslategray;
-    text-align: left;
+    text-align: center;
 }
 
 p {
     padding-left: 50px;
     padding-right: 50px;
-    font-family: Helvetica; /*This changes aspects of the paragraph text within each webpage*/
+    font-family: Helvetica;
     font-size: 20px;
     color: black;
     text-align: justify;
 }
 
 li { 
-    font-family: Helvetica; /*This changes aspects of the bullet points within an unordered list (our names in the low part of the webpage for example)*/
+    font-family: Helvetica;
     font-size: 20px;
     color: black;
 }
@@ -113,48 +110,49 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: khaki; /*This changes the colour of navigation when hovering over*/
+    background-color: khaki;
 }
 
 .active {
-     background-color: khaki; /*Keeps the background hover colour for the active page*/
+     background-color: khaki;
 }
 
 table {
     margin-left: auto;
     margin-right: auto;
-    border: 2px solid black; /*This changes the colour and thickness of the table border*/
+    border: 2px solid black;
 }
 
 .table_heading {
-    color:blueviolet; /*This changes the colour of the table heading (column names) text*/
+    color:blueviolet;
 }
 
 thead {
-    background-color: palevioletred; /*This changes the background colour of the table heading (column names)*/
+    background-color: palevioletred;
 }
 
 td {
     text-align: left;
-    border: 1px solid black; /*This changes the colour of text within each cell and thickness of the table cell borders*/
+    border: 1px solid black;
 }
 
 header {
-    border-bottom: 0px solid black; /*This adds a bottom border to the header section of each webpage*/
+    border-bottom: 0px solid black;
     padding: 15px;
-    background-color: lightslategray; /*This changes the background colour of the header section of each webpage*/
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/9/94/Eftersommar_Hilma_af_Klint_1903.jpeg"); /* We can a link to a background image for our main heading if we want. Just paste the link between the 2 brackets. */
+    background-color: lightslategray;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/9/94/Eftersommar_Hilma_af_Klint_1903.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 footer {
-    border-top: 0px solid black; /*This adds a top border to the footer section of each webpage*/
+    border-top: 0px solid black;
     padding: 15px;
-    background-color: lightslategray; /*This changes the background colour of the footer section of each webpage*/
+    background-color: lightslategray;
 }
+
 footer p {
-     font-family: Helvetica; /*Similar to the above, is sub-header intended for the footer*/
+     font-family: Helvetica;
     font-size: 12px;
     font-weight: bold;
     color: white;
