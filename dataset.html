@@ -2,111 +2,110 @@
 <html lang="en">
     <head>
         <title>The Project Dataset</title>
-        <link href="./resources/css/style.css" rel="stylesheet" type="text/css" /> <!-- Link to external CSS stylesheet -->
+        <link href="./resources/css/style.css" rel="stylesheet" type="text/css" />
     </head>
-   <body> 
+    <body> 
        <header>
         <h1>MoMA Dataset Project</h1>
-        <nav> <!-- The dreaded nav bar-->
+        <nav>
             <ul>
-                <li><a href="index.html">Home</a></li> <!-- Link to the home page -->
-                <li><a href="dataset.html" class="active">Dataset</a></li> <!-- Link to the dataset page -->
-                <li><a href="algorithm.html">Algorithm</a></li> <!-- Link to the algorithm page -->
-                <li><a href="people.html">People</a></li> <!-- Link to the about us page -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dataset.html" class="active">Dataset</a></li>
+                <li><a href="algorithm.html">Algorithm</a></li>
+                <li><a href="people.html">People</a></li>
             </ul>
         </nav>
     </header>
-       <main> <div class="row">
-  <div class="column left">
-<a href="https://commons.wikimedia.org/wiki/File:Reflexer_by_Anders_Zorn_01.jpg.jpg">
-       <img src="resources/css/Images/512px-Reflexer_by_Anders_Zorn_01.jpg" alt="Anders Zorn's painting Reflexer" width="350" height="503" style="display:block; margin:auto;">
-   </a>
-      <h5>Reflexer by Anders Zorn, Public domain, via <a href="https://commons.wikimedia.org/wiki/File:Reflexer_by_Anders_Zorn_01.jpg" target="_blank">Wikimedia Commons.</h5></a>  
-      <a href="https://commons.wikimedia.org/wiki/File:Josef_Frank_Sommerliche_Dorfstra%C3%9Fe.jpg">
-       <img src="resources/css/Images/512px-Josef_Frank_Sommerliche_Dorfstra%C3%9Fe.jpg" alt="Josef Frank's painting Sommerliche Dorfstrasse" width="350" height="337" style="display:block; margin:auto;">
-   </a>
-      <h5>Sommerliche Dorfstrasse by Josef Frank, Public domain, via <a href="https://commons.wikimedia.org/wiki/File:Josef_Frank_Sommerliche_Dorfstra%C3%9Fe.jpg" target="_blank">Wikimedia Commons.</h5></a>
-  </div>
+    <main>
+        <div class="row">
+            <div class="column left">
+                <a href="https://commons.wikimedia.org/wiki/File:Reflexer_by_Anders_Zorn_01.jpg.jpg">
+                <img src="resources/css/Images/512px-Reflexer_by_Anders_Zorn_01.jpg" alt="Anders Zorn's painting Reflexer" width="350" height="503" style="display:block; margin:auto;">
+                </a>
+                <h5>Reflexer by Anders Zorn, Public domain, via <a href="https://commons.wikimedia.org/wiki/File:Reflexer_by_Anders_Zorn_01.jpg" target="_blank">Wikimedia Commons.</h5></a>  
+                <a href="https://commons.wikimedia.org/wiki/File:Josef_Frank_Sommerliche_Dorfstra%C3%9Fe.jpg">
+                <img src="resources/css/Images/512px-Josef_Frank_Sommerliche_Dorfstra%C3%9Fe.jpg" alt="Josef Frank's painting Sommerliche Dorfstrasse" width="350" height="337" style="display:block; margin:auto;">
+                </a>
+                <h5>Sommerliche Dorfstrasse by Josef Frank, Public domain, via <a href="https://commons.wikimedia.org/wiki/File:Josef_Frank_Sommerliche_Dorfstra%C3%9Fe.jpg" target="_blank">Wikimedia Commons.</h5></a>
+            </div>
             <div class="column right">
-    <h2>Dataset Description</h2>
-   <p>We began by brainstorming ideas for topics and themes that we wanted to explore further in this project. We agreed to focus on data related to the cultural heritage sector, since we all had a common interest in that field. After some discussion, we decided to delve into the world of <a href="https://www.moma.org/"target="_blank">MoMA</a> (The Museum of Modern Art, New York), and found an <a href="https://github.com/MuseumofModernArt/collection/blob/main/Artists.csv"target="_blank">interesting dataset</a> in their GitHub collection repository, containing data of all the artists represented at the museum. </p>
-<p>Our initial aim was to investigate the artists’ backgrounds to identify potential biases hidden in the data – for instance, regarding the representation of people of colour in the collection. However, we soon realised that this type of data was not available in the dataset. Consequently, we chose to focus instead on the gender aspect, examining the distribution of male and female artists in MoMA’s collection.</p>
-<p>The dataset included information on approximately 15,000 artists, so we needed to narrow the scope to a more specific subset. The brainstorming process was iterative: initially, we considered analysing gender representation across a particular time period; later, we discussed focusing on artists from our respective home countries (i.e. the Czech Republic, Sweden, and Greece). Since the numbers of artists from the three countries differed greatly, we ultimately decided to examine gender representation among the Swedish artists only. </p>
-<p>Our goal was to create an algorithm capable of counting male and female genders, calculating the totals, and saving the summary in a new file. The dataset we found was already well-formatted as a CSV file. We curated it for our algorithmic purposes by filtering the data to include only Swedish artists and retaining only the necessary variables – namely nationality and gender.</p>
-<p>To make the dataset a bit more interesting and interpretable for humans, we also kept the columns with data regarding the names of the artists, birth and death dates, and Constituent ID. We also cleaned the dataset from rows containing gaps in the “gender” field. We then validated the dataset by opening it in Excel to ensure that the CSV file was properly visualised. After cleaning, curating and validating the dataset, we proceeded to design the algorithm that could process the data. </p>
-<p>This process of work was also iterative. After designing the initial algorithm, we decided to include the rows with the missing gender values as well, to highlight the voids in the dataset. Consequently, we expanded the original dataset to include the "unknown" gender category, representing artists whose gender was not specified, and then expanded the algorithm to account for this additional variable accordingly.</p>
-<p>Take a look at our dataset <a href="https://github.com/OresGeo/Datalogical_Thinking_Group_Project_1/blob/main/resources/css/Swedish%20artists.csv" target="_blank">here.</a> </p>
-<p>If you want to read more about the design process of the algorithm, please do so <a href="https://oresgeo.github.io/Datalogical_Thinking_Group_Project_1/algorithm.html" target="_blank">here.</a></p>
-
-        </p>
-                 <h2>Dataset Sample</h2> <!--This is fully optional, but I thought it would be nice to include a small sample of our dataset coded in HTML as well here (show off a bit and get better grades perhaps haha)-->
-        <p>Below is a sample of the final, curated dataset used in our algorithm:</p>
-        <table> <!-- The table element is used to create a table in HTML-->
-            <thead> <!-- The "thead" element is used to group the header content (basically the first lines in Excel where we usually add the column names) in an HTML table-->
-                <tr>
-                    <th>ConstituentID</th> 
-                    <th>Name</th>
-                    <th>Nationality</th>
-                    <th>Gender</th>
-                    <th>Born</th>
-                    <th>Died</th>
-                </tr>
-            </thead>
-                <tr>
-                    <td>15</td>
-                    <td>Folke Arstrom</td>
-                    <td>Swedish</td>
-                    <td>male</td>
-                    <td>1907</td>
-                    <td>1997</td>
-                </tr>
-                <tr>
-                    <td>27</td>
-                    <td>Erik Gunnar Asplund</td>
-                    <td>Swedish</td>
-                    <td>male</td>
-                    <td>1885</td>
-                    <td>1940</td>
-                </tr>
-                <tr>
-                    <td>170</td>
-                    <td>Monica Andersson</td>
-                    <td>Swedish</td>
-                    <td>female</td>
-                    <td>1957</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>270</td>
-                    <td>Olof Backman</td>
-                    <td>Swedish</td>
-                    <td>male</td>
-                    <td>1899</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>283</td>
-                    <td>Olle Baertling</td>
-                    <td>Swedish</td>
-                    <td>male</td>
-                    <td>1911</td>
-                    <td>1981</td>
-                </tr>
-                <tr>
-                    <td>495</td>
-                    <td>Hagbard Elis Bergh</td>
-                    <td>Swedish</td>
-                    <td>male</td>
-                    <td>1881</td>
-                    <td>1954</td>
-                </tr>
-            </table>
-    </div>
-    </div>
+                <h2>Dataset Description</h2>
+                <p>We began by brainstorming ideas for topics and themes that we wanted to explore further in this project. We agreed to focus on data related to the cultural heritage sector, since we all had a common interest in that field. After some discussion, we decided to delve into the world of <a href="https://www.moma.org/"target="_blank">MoMA</a> (The Museum of Modern Art, New York), and found an <a href="https://github.com/MuseumofModernArt/collection/blob/main/Artists.csv"target="_blank">interesting dataset</a> in their GitHub collection repository, containing data of all the artists represented at the museum. </p>
+                <p>Our initial aim was to investigate the artists’ backgrounds to identify potential biases hidden in the data – for instance, regarding the representation of people of colour in the collection. However, we soon realised that this type of data was not available in the dataset. Consequently, we chose to focus instead on the gender aspect, examining the distribution of male and female artists in MoMA’s collection.</p>
+                <p>The dataset included information on approximately 15,000 artists, so we needed to narrow the scope to a more specific subset. The brainstorming process was iterative: initially, we considered analysing gender representation across a particular time period; later, we discussed focusing on artists from our respective home countries (i.e. the Czech Republic, Sweden, and Greece). Since the numbers of artists from the three countries differed greatly, we ultimately decided to examine gender representation among the Swedish artists only. </p>
+                <p>Our goal was to create an algorithm capable of counting male and female genders, calculating the totals, and saving the summary in a new file. The dataset we found was already well-formatted as a CSV file. We curated it for our algorithmic purposes by filtering the data to include only Swedish artists and retaining only the necessary variables – namely nationality and gender.</p>
+                <p>To make the dataset a bit more interesting and interpretable for humans, we also kept the columns with data regarding the names of the artists, birth and death dates, and Constituent ID. We also cleaned the dataset from rows containing gaps in the “gender” field. We then validated the dataset by opening it in Excel to ensure that the CSV file was properly visualised. After cleaning, curating and validating the dataset, we proceeded to design the algorithm that could process the data. </p>
+                <p>This process of work was also iterative. After designing the initial algorithm, we decided to include the rows with the missing gender values as well, to highlight the voids in the dataset. Consequently, we expanded the original dataset to include the "unknown" gender category, representing artists whose gender was not specified, and then expanded the algorithm to account for this additional variable accordingly.</p>
+                <p>Take a look at our dataset <a href="https://github.com/OresGeo/Datalogical_Thinking_Group_Project_1/blob/main/resources/css/Swedish%20artists.csv" target="_blank">here.</a> </p>
+                <p>If you want to read more about the design process of the algorithm, please do so <a href="https://oresgeo.github.io/Datalogical_Thinking_Group_Project_1/algorithm.html" target="_blank">here.</a></p>
+                <h2>Dataset Sample</h2>
+                <p>Below is a sample of the final, curated dataset used in our algorithm:</p>
+                <table>
+                <thead>
+                    <tr>
+                        <th>ConstituentID</th> 
+                        <th>Name</th>
+                        <th>Nationality</th>
+                        <th>Gender</th>
+                        <th>Born</th>
+                        <th>Died</th>
+                    </tr>
+                </thead>
+                    <tr>
+                        <td>15</td>
+                        <td>Folke Arstrom</td>
+                        <td>Swedish</td>
+                        <td>male</td>
+                        <td>1907</td>
+                        <td>1997</td>
+                    </tr>
+                    <tr>
+                        <td>27</td>
+                        <td>Erik Gunnar Asplund</td>
+                        <td>Swedish</td>
+                        <td>male</td>
+                        <td>1885</td>
+                        <td>1940</td>
+                    </tr>
+                    <tr>
+                        <td>170</td>
+                        <td>Monica Andersson</td>
+                        <td>Swedish</td>
+                        <td>female</td>
+                        <td>1957</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>270</td>
+                        <td>Olof Backman</td>
+                        <td>Swedish</td>
+                        <td>male</td>
+                        <td>1899</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>283</td>
+                        <td>Olle Baertling</td>
+                        <td>Swedish</td>
+                        <td>male</td>
+                        <td>1911</td>
+                        <td>1981</td>
+                    </tr>
+                    <tr>
+                        <td>495</td>
+                        <td>Hagbard Elis Bergh</td>
+                        <td>Swedish</td>
+                        <td>male</td>
+                        <td>1881</td>
+                        <td>1954</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
     </main>
-    <footer> <!-- The "footer" includes information on copyright, contact info etc. Basically what shows at the bottom of most webpages.-->
-     <h4>Created for educational purposes as an assignment for the course "Datalogical Thinking" (Master's Programme in Information Science: Digital Environments, University of Borås) by the students: Dana Neumannová, Isabelle Brandt, Julia Milder and Orestis Georgalas.</h4>
+    <footer>
+        <h4>Created for educational purposes as an assignment for the course "Datalogical Thinking" (Master's Programme in Information Science: Digital Environments, University of Borås) by the students: Dana Neumannová, Isabelle Brandt, Julia Milder and Orestis Georgalas.</h4>
         <p>Header image credit: Eftersommar by Hilma af Klint, Public domain, via <a href="https://bcl.wikipedia.org/wiki/Ladawan:Eftersommar_Hilma_af_Klint_1903.jpeg" class="href" target="_blank">Wikimedia Commons.</a></p>
     </footer>
-        </body>    
+    </body>    
 </html>
