@@ -2,7 +2,7 @@
 
 This repository was created as part of the **Datalogical Thinking** course  
 *(Master's Programme in Information Science: Digital Environments, University of Borås)*  
-by the students:
+by the students of group number 5:
 
 - **Dana Neumannová**
 - **Isabelle Brandt**
